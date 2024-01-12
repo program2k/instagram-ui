@@ -35,14 +35,14 @@ const AuthForm = () => {
         <VStack spacing={4}>
           <Image src="/logo.png" h={24} cursor={"pointer"} alt="instagram" />
           <Input
-            placeholder="Email"
+            placeholder="Số điện thoại, tên người dùng hoặc email"
             fontSize={14}
             type="email"
             value={input.email}
             onChange={(e) => setInput({ ...input, email: e.target.value })}
           />
           <Input
-            placeholder="Password"
+            placeholder="Mật khẩu"
             fontSize={14}
             type="password"
             value={input.password}
@@ -51,7 +51,7 @@ const AuthForm = () => {
 
           {isLogin ? (
             <Input
-              placeholder="Confirm Password"
+              placeholder="Xác nhận lại mật khẩu"
               fontSize={14}
               type="password"
               value={input.confirmPassword}
@@ -68,7 +68,7 @@ const AuthForm = () => {
             fontSize={14}
             onClick={handleAuth}
           >
-            {isLogin ? "Login" : "Sign up"}
+            {isLogin ? "Đăng ký" : "Đăng nhập"}
           </Button>
 
           <Flex
@@ -80,7 +80,7 @@ const AuthForm = () => {
           >
             <Box flex={2} h={"1px"} bg={"gray.400"} />
             <Text mx={1} color={"white"}>
-              OR
+              Hoặc
             </Text>
             <Box flex={2} h={"1px"} bg={"gray.400"} />
           </Flex>
@@ -92,7 +92,7 @@ const AuthForm = () => {
           >
             <Image src="/google.png" h={5} alt="google logo" />
             <Text mx="2" color={"blue.500"}>
-              Log in with Google
+              Đăng nhập với Google
             </Text>
           </Flex>
         </VStack>
@@ -101,14 +101,14 @@ const AuthForm = () => {
       <Box border={"1px solid gray"} borderRadius={4} padding={5}>
         <Flex alignItems={"center"} justifyContent={"center"}>
           <Box mx={2} fontSize={14}>
-            {isLogin ? "Don't have an account?" : "Already have an account?"}
+            {isLogin ? "Đã có tài khoản?" : "Chưa có tài khoản?"}
           </Box>
           <Box
             color={"blue.500"}
             cursor={"pointer"}
             onClick={() => setIsLogin(!isLogin)}
           >
-            {isLogin ? "Sign Up" : "Log in"}
+            {isLogin ? "Đăng nhập" : "Đăng ký"}
           </Box>
         </Flex>
       </Box>
