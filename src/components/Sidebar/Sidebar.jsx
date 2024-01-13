@@ -41,7 +41,7 @@ const Sidebar = () => {
       text: "Tạo",
     },
     {
-      icon: <Avatar size={"sm"} name="ngocmie" src="/mymy.jpg" />,
+      icon: <Avatar size={"sm"} name="UserName" src="/profile.jpg" />,
       text: "Trang cá nhân",
       link: "/profile",
     },
