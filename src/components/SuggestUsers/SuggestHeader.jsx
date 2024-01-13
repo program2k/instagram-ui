@@ -7,7 +7,7 @@ const SuggestHeader = () => {
       <Flex alignItems={"center"} gap={2}>
         <Avatar name="UserName" size={"sm"} src="/profile.jpg" />
         <Text fontSize={14} fontWeight={"md"}>
-          ngocmie
+          UserName
         </Text>
       </Flex>
       <Link
