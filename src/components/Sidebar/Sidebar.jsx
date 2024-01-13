@@ -8,18 +8,29 @@ import {
   NotificationsLogo,
   SearchLogo,
 } from "../../assets/Logo";
-import { AiFillHome } from "react-icons/ai";
+import { AiFillHome, AiOutlineCompass, AiFillMessage } from "react-icons/ai";
+import { BiLogOut } from "react-icons/bi";
 
 const Sidebar = () => {
   const sidebarItems = [
     {
-      icon: <AiFillHome />,
+      icon: <AiFillHome size={25} />,
       text: "Trang chủ",
       link: "/",
     },
     {
       icon: <SearchLogo />,
       text: "Tìm kiếm",
+    },
+    {
+      icon: <AiOutlineCompass size={25} />,
+      text: "Khám phá",
+      link: "/explore",
+    },
+    {
+      icon: <AiFillMessage size={25} />,
+      text: "Tin nhắn",
+      link: "/direct/inbox",
     },
     {
       icon: <NotificationsLogo />,
@@ -30,7 +41,7 @@ const Sidebar = () => {
       text: "Tạo",
     },
     {
-      icon: <Avatar size={"sm"} name="Burak Orkmez" src="/profilepic.png" />,
+      icon: <Avatar size={"sm"} name="ngocmie" src="/mymy.jpg" />,
       text: "Trang cá nhân",
       link: "/profile",
     },
@@ -102,6 +113,32 @@ const Sidebar = () => {
             </Tooltip>
           ))}
         </Flex>
+        <Tooltip
+          hasArrow
+          label={"Đăng xuất"}
+          placement="right"
+          ml={1}
+          openDelay={500}
+          display={{ base: "block", md: "none" }}
+        >
+          <Link
+            display={"flex"}
+            to={"/auth"}
+            as={RouterLink}
+            alignItems={"center"}
+            gap={4}
+            _hover={{
+              bg: "whiteAlpha.400",
+            }}
+            borderRadius={6}
+            p={2}
+            w={"full"}
+            mt={"auto"}
+          >
+            <BiLogOut size={25} />
+            <Box display={{ base: "none", md: "block" }}>Đăng xuất</Box>
+          </Link>
+        </Tooltip>
       </Flex>
     </Box>
   );
