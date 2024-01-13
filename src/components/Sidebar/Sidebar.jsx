@@ -2,24 +2,26 @@ import { Avatar, Box, Flex, Link, Tooltip } from "@chakra-ui/react";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import {
-  CreatePostLogo,
   InstagramLogo,
   InstagramMobileLogo,
-  NotificationsLogo,
-  SearchLogo,
+  ReelsLogo,
 } from "../../assets/Logo";
-import { AiFillHome, AiOutlineCompass, AiFillMessage } from "react-icons/ai";
+import { AiOutlineCompass } from "react-icons/ai";
+import { RiMessengerLine } from "react-icons/ri";
+import { IoSearchOutline } from "react-icons/io5";
+import { CiHeart, CiCirclePlus } from "react-icons/ci";
 import { BiLogOut } from "react-icons/bi";
+import { TbHomeMove } from "react-icons/tb";
 
 const Sidebar = () => {
   const sidebarItems = [
     {
-      icon: <AiFillHome size={25} />,
+      icon: <TbHomeMove size={25} />,
       text: "Trang chủ",
       link: "/",
     },
     {
-      icon: <SearchLogo />,
+      icon: <IoSearchOutline size={25} />,
       text: "Tìm kiếm",
     },
     {
@@ -28,16 +30,21 @@ const Sidebar = () => {
       link: "/explore",
     },
     {
-      icon: <AiFillMessage size={25} />,
+      icon: <ReelsLogo />,
+      text: "Reels",
+      link: "/reels",
+    },
+    {
+      icon: <RiMessengerLine size={25} />,
       text: "Tin nhắn",
       link: "/direct/inbox",
     },
     {
-      icon: <NotificationsLogo />,
+      icon: <CiHeart size={25} />,
       text: "Thông báo",
     },
     {
-      icon: <CreatePostLogo />,
+      icon: <CiCirclePlus size={25} />,
       text: "Tạo",
     },
     {

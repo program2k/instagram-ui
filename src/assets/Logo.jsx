@@ -1,7 +1,7 @@
 export const InstagramLogo = () => (
   <svg
     aria-label="Instagram"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="29"
     role="img"
@@ -20,7 +20,7 @@ export const InstagramLogo = () => (
 export const InstagramMobileLogo = () => (
   <svg
     aria-label="Instagram"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"
@@ -35,7 +35,7 @@ export const InstagramMobileLogo = () => (
 export const SearchLogo = () => (
   <svg
     aria-label="Search"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"
@@ -66,7 +66,7 @@ export const SearchLogo = () => (
 export const ReelsLogo = () => (
   <svg
     aria-label="Reels"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"
@@ -123,7 +123,7 @@ export const ReelsLogo = () => (
 export const MessagesLogo = () => (
   <svg
     aria-label="Messenger"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"
@@ -147,7 +147,7 @@ export const MessagesLogo = () => (
 export const NotificationsLogo = () => (
   <svg
     aria-label="Notifications"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"
@@ -176,7 +176,7 @@ export const UnlikeLogo = () => (
 export const CreatePostLogo = () => (
   <svg
     aria-label="New post"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"
@@ -219,7 +219,7 @@ export const CreatePostLogo = () => (
 export const CommentLogo = () => (
   <svg
     aria-label="Comment"
-    color="rgb(245, 245, 245)"
+    color="#000"
     fill="rgb(245, 245, 245)"
     height="24"
     role="img"

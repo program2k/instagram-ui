@@ -35,7 +35,7 @@ const AuthForm = () => {
         <VStack spacing={4}>
           <Image src="/logo.png" h={24} cursor={"pointer"} alt="instagram" />
           <Input
-            placeholder="Số điện thoại, tên người dùng hoặc email"
+            placeholder="Tên người dùng hoặc email"
             fontSize={14}
             type="email"
             value={input.email}
